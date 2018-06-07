@@ -1,0 +1,243 @@
+/*页面顶部导航页css代码*/
+*
+{
+    font-family: 'Microsoft YaHei';
+
+    margin: 0;
+    padding: 0;
+}
+ul, li, dir
+{
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+}
+.head a:link
+{
+    color: white;
+}
+.head a:visited
+{
+    color: white;
+}
+.head
+{
+    font-size: 14px;
+    line-height: 50px;
+
+    position: fixed;
+    z-index: 999;
+
+    display: block;
+
+    width: 100%;
+    min-width: 1300px;
+    height: 50px;
+
+    vertical-align: middle;
+
+    color: #fff;
+    background-color: #000;
+}
+.logo
+{
+    display: block;
+    float: left;
+
+    width: 240px;
+    height: 50px;
+    margin-left: -31px;
+
+    background: url('../img/logo.png') no-repeat;
+}
+.arrow
+{
+    position: relative;
+
+    float: right;
+
+    width: 7px;
+    height: 4px;
+    margin: 23px 0 0 3px;
+
+    cursor: pointer;
+
+    background: url(../img/arrow.png) no-repeat -223px -18px;
+}
+.head li:hover .arrow
+{
+    background: url(../img/arrow2.png) no-repeat;
+}
+.menu_fl #menu01
+{
+    color: #8cff7d;
+}
+.menu_fl li
+{
+    float: left;
+
+    width: 40px;
+    margin: auto 3px;
+    padding: 0 10px;
+
+    text-align: center;
+}
+.menu_fl li:hover
+{
+    background-color: #121a16;
+}
+.menu_fl li:hover a
+{
+    color: #8cff7d;
+}
+.menu_fl li ul
+{
+    display: none;
+}
+.menu_fl li:hover ul
+{
+    display: block;
+}
+.menu_fl li ul li
+{
+    float: none;
+
+    width: 80px;
+    height: 40px;
+    margin-left: -10px;
+    padding: 0;
+
+    background-color: #121a16;
+}
+.menu_fl li ul li a:hover
+{
+    display: block;
+
+    color: white;
+    background-color: #77b65f;
+}
+.menu_fr li
+{
+    float: right;
+
+    width: 40px;
+    margin: auto 3px;
+    padding: 0 10px;
+
+    text-align: center;
+}
+.menu_fr li ul
+{
+    display: none;
+}
+.menu_fr li ul li
+{
+    float: none;
+
+    width: 90px;
+    height: 40px;
+    margin-left: -10px;
+    padding: 0;
+
+    background-color: #121a16;
+}
+.menu_fr li:hover ul
+{
+    display: block;
+}
+.menu_fr li ul li a:hover
+{
+    display: block;
+
+    color: white;
+    background-color: #77b65f;
+}
+.menu_fr li:hover a
+{
+    color: #8cff7d;
+}
+.menu_fr li:hover
+{
+    background-color: #121a16;
+}
+#pic
+{
+    display: block;
+    overflow: hidden;
+
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+
+    background: url(../img/icon.png) no-repeat 5px -33px;
+}
+.menu_fr li:hover #pic
+{
+    background: url(../img/icon1.png) no-repeat 5px -33px;
+}
+.search
+{
+    float: right;
+}
+form #word
+{
+    display: block;
+
+    width: 200px;
+    height: 30px;
+    margin: 10px 0;
+
+    text-indent: 1em;
+
+    color: #556566;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+input:-webkit-autofill
+{
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+form .search_button
+{
+    position: absolute;
+    top: 10px;
+    right: 330px;
+
+    width: 30px;
+    height: 25px;
+
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    background: url(../img/search.png) no-repeat;
+    background-size: contain;
+}
+form #tip li
+{
+    font-size: 12px;
+    line-height: 35px;
+
+    overflow: hidden;
+
+    width: 200px;
+    height: 35px;
+
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    background: #000;
+}
+form #tip a:hover
+{
+    display: block;
+
+    background: #4c605c;
+}

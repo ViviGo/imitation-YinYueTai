@@ -1,0 +1,49 @@
+/*
+类为footer的css
+ */
+.footer
+{
+    line-height: 20px;
+
+    height: 150px;
+    margin: 10px auto 0;
+
+    text-align: center;
+
+    color: #999;
+}
+.footer_link
+{
+    font-size: 14px;
+
+    padding: 35px 0 20px;
+}
+.footer a:link,
+a:visited
+{
+    color: #999;
+}
+.footer a:hover
+{
+    color: #8cff7d;
+}
+.ico_line
+{
+    display: inline-block;
+    overflow: hidden;
+
+    width: 2px;
+    height: 10px;
+    margin: 0 8px;
+
+    background: url(../img/ico_index.png) no-repeat -70px 0;
+}
+.footer_copy
+{
+    font-size: 12px;
+    line-height: 20px;
+}
+.footer_copy a
+{
+    color: #999;
+}

@@ -1,0 +1,102 @@
+/*
+    全屏展示器css
+ */
+ul
+{
+    list-style: none;
+}
+.blank
+{
+    width: 100%;
+    height: 50px;
+}
+#roll
+{
+    position: relative;
+
+    width: 100%; height: 500px;
+    margin: 0;
+}
+#roll img
+{
+    position: absolute;top: 0;
+    left: 0;
+
+    width: 100%; height: 100%;
+
+    cursor: pointer;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+
+    opacity: 0;
+
+    animation-fill-mode: forwards;
+}
+#roll img.show
+{
+    animation-name: show;
+}
+#roll img.unshow
+{
+    animation-name: disapper;
+}
+#roll ul
+{
+    position: absolute;
+    top: 60px; right: 60px;
+
+    border: rgba(255,255,255,.7) solid 1px;
+}
+#roll ul li
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+
+    overflow: hidden;
+
+    width: 240px;
+    height: 35px;
+    padding: 0 10px ;
+
+    cursor: pointer;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: white;
+    background: rgba(0,0,0,.5);
+}
+#roll ul li.active
+{
+    color: #8cff7d;
+}
+.box_tb
+{
+    width: 100%;
+    height: 10px;
+
+    background: rgba(0,0,0,.5);
+}
+@keyframes show
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+@keyframes disappear
+{
+    from
+    {
+        opacity: 1;
+    }
+    to
+    {
+        opacity: 0;
+    }
+}

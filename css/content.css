@@ -1,0 +1,659 @@
+/*
+这是整个内容展示区的css
+ */
+.inner_box
+{
+    position: relative;
+
+    width: 90%;
+    height: 465px;
+    margin: 0 auto;
+
+    color: black;
+}
+.inner_box1
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 90%;
+    height: 280px;
+    margin: 0 auto;
+
+    color: black;
+}
+.box
+{
+    width: 100%;
+    margin-top: 5px;
+
+    border-bottom: 4px solid #eaecee;
+}
+.title
+{
+    overflow: hidden;
+
+    width: 100%;
+    padding: 34px 0 16px;
+}
+.title h3
+{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+
+    float: left;
+
+    color: #000;
+}
+.title h5
+{
+    font-weight: normal;
+    line-height: 20px;
+
+    float: left;
+
+    color: #a4a4a4;
+}
+.title #tab
+{
+    float: right;
+
+    color: black;
+}
+.title #tab li
+{
+    font-size: 14px;
+
+    float: left;
+
+    padding: 0 19px;
+
+    background: url(../img/dash_border.png) 0 no-repeat;
+}
+.title #tab li a
+{
+    padding-bottom: 15px;
+
+    color: black;
+}
+.title #tab #first_tab
+{
+    background: none;
+}
+.title #tab .current_tab a
+{
+    color: #8cff7d;
+    border-bottom: 2px solid #8cff7d;
+}
+.line
+{
+    height: 2px;
+    margin-top: -2px;
+
+    background: #f4f4f4;
+}
+#tab_box
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 400px;
+}
+#change_box
+{
+    overflow: hidden;
+
+    height: 210px;
+}
+#change1 li
+{
+    height: 200px;
+}
+.tab_show
+{
+    position: absolute;
+
+    display: none;
+
+    width: 5000px;
+    height: 385px;
+    margin-top: 10px;
+}
+.tab_show.first_tab_show
+{
+    left: 0;
+
+    display: block;
+}
+.lf_arrow
+{
+    position: absolute;
+    z-index: 2;
+
+    width: 26px;
+    height: 115px;
+
+    background: url(../img/turn_arrow2.png) no-repeat;
+}
+#prev
+{
+    top: 178px;
+    left: -4%;
+
+    background-position: -52px 0;
+}
+#next
+{
+    top: 178px;
+    right: -4%;
+
+    background-position: -78px 0;
+}
+.inner_box #prev:hover
+{
+    top: 178px;
+    left: -4%;
+
+    background-position: 0 0;
+}
+.inner_box #next:hover
+{
+    top: 178px;
+    right: -4%;
+
+    background-position: -22px 0;
+}
+.rollbox
+{
+    position: relative;
+
+    float: left;
+    clear: both;
+    overflow: hidden;   /*隐藏溢出的图片，因为图片左浮动，总宽度为2100*/
+
+    width: 470px;     /*这里400x400是图片的宽高*/
+    height: 385px;
+    margin: 0;
+
+    cursor: pointer;
+}
+.rollbox .inner_arrow:hover
+{
+    color: #8cff7d;
+    background-color: RGBA(0,0,0,.7);
+}
+.rollbox .inner_arrow
+{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39px;
+
+    position: absolute;
+    z-index: 2;
+    top: 130px;
+
+    display: block;    /*左右切换按钮默认先隐藏*/
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #fff;
+    background-color: RGBA(0,0,0,.3);
+}
+#inner_next
+{
+    left: 430px;
+}
+.list
+{
+    position: absolute;  /*基于父容器rollbox进行定位*/
+    top: 6px;
+
+    width: 2100px;
+    height: 300px;
+}
+.list img
+{
+    float: left;
+}
+.sub
+{
+    position: relative;
+
+    float: left;
+}
+.subtitle
+{
+    font-size: 16px;
+    line-height: 15px;
+
+    position: absolute;
+    top: 310px;
+
+    margin-left: 10px;
+
+    color: black;
+}
+.second
+{
+    font-size: 15px;
+
+    top: 340px;
+
+    color: #6e6e6e;
+}
+.rollbox:hover .subtitle
+{
+    color: #8cff7d;
+}
+#show_pic
+{
+    float: left;
+    overflow: hidden;
+
+    width: 3000px;
+    height: 400px;
+}
+#show_pic ul
+{
+    float: left;
+
+    margin-top: 5px;
+}
+#show_pic ul li
+{
+    float: left;
+
+    width: 215px;
+    height: 400px;
+    margin-left: 35px;
+}
+#show_pic ul #first
+{
+    margin-left: 0;
+}
+#show_pic1
+{
+    position: absolute;
+
+    float: left;
+    overflow: hidden;
+
+    width: 3000px;
+    height: 400px;
+}
+#show_pic1 ul
+{
+    float: left;
+
+    margin-top: 15px;
+}
+#show_pic1 ul li
+{
+    float: left;
+
+    width: 216px;
+    height: 400px;
+    margin-left: 35px;
+}
+#show_pic1 ul #first
+{
+    margin-left: 0;
+}
+.other
+{
+    height: 250px;
+}
+#show
+{
+    margin-bottom: 5px;
+
+    cursor: pointer;
+}
+#show:hover .subtitle1
+{
+    color: #8cff7d;
+}
+#change_box #show_pic
+{
+    margin-top: 10px;
+}
+.subtitle1
+{
+    font-size: 15px;
+    line-height: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin-top: 6px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: black;
+}
+.three
+{
+    font-size: 14px;
+
+    color: #6e6e6e;
+}
+.show:hover .subtitle1
+{
+    color: #8cff7d;
+}
+#tab6 .line
+{
+    height: 1px;
+
+    background: #f4f4f4;
+
+    margin-buttom: -1px;
+}
+#tab6 .subtitle1
+{
+    margin-bottom: 35px;
+    padding-top: 8px;
+    /*border-top: 1px solid #f4f4f4;*/
+}
+#tab5 .line
+{
+    height: 1px;
+
+    background: #f4f4f4;
+
+    margin-buttom: -1px;
+}
+#tab5 .subtitle1
+{
+    margin-bottom: 35px;
+    padding-top: 8px;
+    /*border-top: 1px solid #f4f4f4;*/
+}
+.title #change
+{
+    font-size: 14px;
+
+    display: block;
+    float: right;
+
+    padding-left: 23px;
+
+    color: #a4a4a4;
+    background: url(../img/change.png) 3px 3px no-repeat;
+}
+.title #more
+{
+    font-size: 14px;
+
+    display: block;
+    float: right;
+
+    padding-left: 23px;
+
+    color: #a4a4a4;
+}
+.title #change:hover
+{
+    display: block;
+
+    color: #8cff7d;
+    background: url(../img/change1.png) 3px 3px no-repeat;
+}
+.title #more:hover
+{
+    color: #8cff7d;
+}
+.tv_name
+{
+    margin-bottom: 15px;
+}
+.tv_name h4
+{
+    font-size: 14px;
+    line-height: 25px;
+}
+.tv_name p
+{
+    font-size: 8px;
+    line-height: 15px;
+
+    color: #999;
+}
+#show_tv
+{
+    float: left;
+    overflow: hidden;
+
+    height: 400px;
+    margin-top: 5px;
+}
+#show_tv ul li
+{
+    float: left;
+
+    width: 215px;
+    margin-left: 35px;
+}
+#show_tv .show img
+{
+    display: none;
+}
+#show_tv .current_tv img
+{
+    display: block;
+}
+#show_tv .show
+{
+    margin-top: 16px;
+}
+.titleLink
+{
+    float: left;
+    overflow: hidden;
+
+    margin-top: 6px;
+    margin-left: 15px;
+}
+.titleLink a
+{
+    font-size: 14px;
+    line-height: 14px;
+
+    float: left;
+
+    padding: 0 13px;
+
+    color: #666;
+    border-left: 1px solid #e5e5e5;
+}
+.titleLink a:hover
+{
+    color: #8cff7d;
+}
+#back_to_top
+{
+    position: fixed;
+    z-index: 298;
+    right: 10px;
+    bottom: 100px;
+
+    width: 50px;
+    height: 65px;
+}
+#back_to_top a
+{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 65px;
+}
+#back_to_top .returnTop
+{
+    background: url(../img/returntop.png) no-repeat;
+}
+#listen{
+    position: fixed;
+    z-index: 298;
+    right: 5px;
+    bottom: 170px;
+    width: 60px;
+    height: 60px;
+}
+#listen a
+{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+#listen .listenmusic
+{
+    background: url(../img/click-cloud.png) no-repeat;
+    background-size: cover;
+}
+#listen .listenmusic:hover{
+    background: url(../img/click-cloud1.png) no-repeat;
+    background-size: cover;
+}
+.form
+{
+    height: 385px;
+
+    color: black;
+}
+#more2 #change_box
+{
+    height: 300px;
+}
+.img_bigger
+{
+    position: absolute;
+
+    float: left;
+
+    width: 260px;
+    height: 295px;
+}
+.img_shadow
+{
+    position: absolute;
+
+    width: 260px;
+    height: 295px;
+
+    background: url(../img/playIcon.png) no-repeat;
+    background-size: 100%;
+}
+.hover_box
+{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	display: none;
+	overflow: hidden;
+	width: 475px;
+	height: 285px;
+	background: #f3f5f7;
+}
+#left_hover_box
+{
+    left: -250px;
+}
+#more2 #show_pic1 li:hover .hover_box
+{
+    display: block;
+}
+#more2 #show_pic1 li
+{
+    position: relative;
+}
+.info
+{
+    float: right;
+
+    width: 175px;
+    height: 294px;
+    padding-top: 10px;
+    padding-right: 15px;
+
+    color: #a4a4a4;
+    border: 1px solid #e5e5e5;
+    border-left: 0;
+}
+.info_first
+{
+    font-size: 15px;
+
+    margin-bottom: 5px;
+
+    color: black;
+}
+.info_second
+{
+    font-size: 10px;
+    line-height: 20px;
+
+    color: #a4a4a4;
+}
+.user
+{
+    margin-top: 10px;
+
+    color: #a4a4a4;
+}
+.user img
+{
+    float: left;
+
+    width: 40px;
+    height: 40px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -ms-border-radius: 50%;
+}
+.user .username
+{
+    font-size: 14px;
+    line-height: 40px;
+
+    display: block;
+
+    margin-left: 50px;
+}
+#show_tv img
+{
+    width: 215px;
+    height: 120px;
+}
+#show img
+{
+    width: 210px;
+    height: 115px;
+}
+#more2 #show img
+{
+    width: 220px;
+    height: 220px;
+}
+.start_play{
+    background: url(../img/playIcon.png)no-repeat;
+    height: 100px;
+    width: 100px;
+}
