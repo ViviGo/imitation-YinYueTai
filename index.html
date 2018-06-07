@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仿音悦台首页</title>
+    <style>
+        body{
+            min-width: 1345px;
+        }
+    </style>
+    <link href="css/loading.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/roll.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/login_regis.css" rel="stylesheet">
+    <link href="css/audioplayer.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/load.js"></script>
+    <script src="js/roll.js"></script>
+	<script src="js/littleRollbox.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/bigRollbox.js"></script>
+    <script src="js/change.js"></script>
+    <script src="js/tv_hover.js"></script>
+    <script src="js/returnTop.js"></script>
+
+</head>
+<body>
+    <div class="wait">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <div class="loading">
+            <img class="load_img1" src="img/load1.png" width="400px" height="400px">
+            <img class="load_img2" src="img/font.png" width="350px" height="150px">
+        </div>
+    </div>
+    <div class="all" style="display: none">
+        <header>
+            <div class="head">
+                <a href="index.html" class="logo" title="音悦台首页"></a>
+                <ul class="menu_fl">
+                    <li><a href="index.html" id="menu01">首页</a></li>
+                    <li>
+                        <a href="javascript:void(0)">MV
+                            <span class="arrow"></span>
+                        </a>
+                        <ul>
+                            <li><a href="javascript:void(0)">韩流频道</a></li>
+                            <li><a href="javascript:void(0)">华语频道</a></li>
+                            <li><a href="javascript:void(0)">欧美频道</a></li>
+                            <li><a href="javascript:void(0)">日语频道</a></li>
+                            <li><a href="javascript:void(0)">粉丝聚集</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">V榜</a></li>
+                    <li><a href="javascript:void(0)">娱乐</a></li>
+                    <li><a href="javascript:void(0)">商城</a></li>
+                    <li><a href="javascript:void(0)">众筹</a></li>
+                    <li style="width: 70px;margin: auto 8px;padding: 0 10px;"><a href="#" class="menu">民俗文化</a></li>
+                </ul>
+                <ul class="menu_fr">
+                    <li><a href="javascript:void(0)" id="btn_re">注册</a></li>
+                    <li><a href="javascript:void(0)" id="btn_lo">登录</a></li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img id="pic1" src="img/app.png" width="21" height="16">
+                            <span class="arrow"></span>
+                        </a>
+                        <ul>
+                            <li><a href="javascript:void(0)">移动客户端</a></li>
+                            <li><a href="javascript:void(0)">PC客户端</a></li>
+                            <li><a href="javascript:void(0)">Star明星直播</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="pic" title="投稿"></a></li>
+                    <li><a href="javascript:void(0)" title="vip会员">VIP</a></li>
+                </ul>
+                <div class="search">
+                    <form name="formSearch" onSubmit="return go(this)" id="formid">
+                        <input name="q" type="text" id="word" class="search_value" autocomplete="off" placeholder="请输入你需要寻找的内容">
+                        <input class="search_button" type="submit" value="" />
+                        <div id="tip" style="display: none">
+                            <ul>
+                                <li><a href="javascript:void(0)">夏日女团清凉回归</a></li>
+                                <li><a href="javascript:void(0)">EXO歌曲DEMO大合集</a></li>
+                                <li><a href="javascript:void(0)">林肯公园主唱自杀身亡，怀念他！</a></li>
+                                <li><a href="javascript:void(0)">暑期档电视剧OST大放送</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <div class="blank"></div>
+        <div id="roll">
+            <img src="img/img1.jpg" alt="天王也搞模仿？超爆笑合集在此！" class="show" />
+            <img src="img/img2.jpg" alt="AOA 几度风雨 天使终将绽放光芒" />
+            <img src="img/img3.jpg" alt="每个人的心中都有一首“孙·燕·姿”" />
+            <img src="img/img4.jpg" alt="Selena Gomez—从迪士尼女孩到新生代DIVA" />
+            <img src="img/img5.jpg" alt="ACEMAX-RED校园三部曲最终篇" />
+            <img src="img/img6.jpg" alt="SWIN《告别少年》唱出心情告白" />
+            <img src="img/img7.jpg" alt="T-ara：坚持终有奇迹，皇冠永远闪亮！" />
+            <img src="img/img8.jpg" alt="夏日女团清凉回归" />
+            <img src="img/img9.jpg" alt="将所有繁杂离于身后,Linkin Park FOREVER" />
+            <img src="img/img10.jpg" alt="金Samuel 迷你1辑《SIXTEEN》" />
+            <ul>
+                <div class="box_tb"></div>
+                <li class="active">天王也搞模仿？超爆笑合集在此！</li>
+                <li>AOA 几度风雨 天使终将绽放光芒</li>
+                <li>每个人的心中都有一首“孙·燕·姿”</li>
+                <li>Selena Gomez—从迪士尼女孩到新生代DIVA</li>
+                <li>ACEMAX-RED校园三部曲最终篇</li>
+                <li>SWIN《告别少年》唱出心情告白</li>
+                <li>T-ara：坚持终有奇迹，皇冠永远闪亮！</li>
+                <li>夏日女团清凉回归</li>
+                <li>将所有繁杂离于身后,Linkin Park FOREVER</li>
+                <li>金Samuel 迷你1辑《SIXTEEN》</li>
+                <div class="box_tb"></div>
+            </ul>
+        </div>
+        <div class="box" id="tab1">
+            <div class="inner_box permiere">
+                <div class="title">
+                    <h3>首播</h3>
+                    <ul id="tab">
+                        <li class="current_tab" id="first_tab"><a href="javascript:void(0)">全部</a></li>
+                        <li><a href="javascript:void(0)">内地</a></li>
+                        <li><a href="javascript:void(0)">港台</a></li>
+                        <li><a href="javascript:void(0)">欧美</a></li>
+                        <li><a href="javascript:void(0)">韩国</a></li>
+                        <li><a href="javascript:void(0)">日本</a></li>
+                    </ul>
+                </div>
+                <div class="line"></div>
+                <a href="javascript:void(0);" id="prev" class="lf_arrow" style="display: none"></a>
+                <a href="javascript:void(0);" id="next" class="lf_arrow" style="display: none"></a>
+                <div id="tab_box">
+                    <div class="tab_show first_tab_show" style="left: 0">
+                        <div class="rollbox">
+                            <div class="list" style="left: 0px">
+                                <div class="sub">
+                                    <img src="img/-M-81c08f3b23f75779eabad6d480f0c38e_0x0.gif" width="470" height="300" alt=""/>
+                                    <p class="subtitle">Fetish</p>
+                                    <p class="subtitle second">Selena惊艳新单！什么叫做高级有质感！</p>
+                                </div>
+                                <div class="sub">
+                                    <img src="img/-M-185da4391e0a84187170798fd65d9bc2_0x0.jpg" width="470" height="300" alt=""/>
+                                    <p class="subtitle">EXO《认识的哥哥》全场中字~！</p>
+                                    <p class="subtitle second">看超能力高校的八位大佬如何制霸认哥高校~</p>
+                                </div>
+                            </div>
+                            <a href="javascript:void (0);" id="inner_prev" class="inner_arrow">&lt;</a>
+                            <a href="javascript:void (0);" id="inner_next" class="inner_arrow">&gt;</a>
+                        </div>
+                        <div id="show_pic">
+                            <ul>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(1).jpg">
+                                        <p class="subtitle1">Boys</p>
+                                        <p class="subtitle1 three">Charli XCX</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(2).jpg">
+                                        <p class="subtitle1">CALLING YOU Smile ver.</p>
+                                        <p class="subtitle1 three">Highlight</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(3).jpg">
+                                        <p class="subtitle1">Talking To Myself</p>
+                                        <p class="subtitle1 three">Linkin Park</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(4).jpg">
+                                        <p class="subtitle1">BLAST!</p>
+                                        <p class="subtitle1 three">ももいろクローバーZ</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(5).jpg">
+                                        <p class="subtitle1">Holiday Night Teaser Clip #YOONA</p>
+                                        <p class="subtitle1 three">少女时代 & 允儿(少女时代)</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(6).jpg">
+                                        <p class="subtitle1">LOVE WHISPER Teaser</p>
+                                        <p class="subtitle1 three">GFriend回归新曲预告公开</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(7).jpg">
+                                        <p class="subtitle1">Marmalade 试听版</p>
+                                        <p class="subtitle1 three">Macklemore & Ryan Lewis & Lil Yachty</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(8).jpg">
+                                        <p class="subtitle1">我害怕 电视剧《我们的少年时代》插曲</p>
+                                        <p class="subtitle1 three">薛之谦</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="loading" style="display:none"></div>
+                    </div>
+                    <div class="tab_show" style="left: 0">
+                        <div id="show_pic">
+                            <ul>
+                                <li id="first">
+                                    <div id="show">
+                                        <img src="img/tab1/pic2%20(1).jpg">
+                                        <p class="subtitle1">十里桃花 电影《三生三世十里桃花》主题曲</p>
+                                        <p class="subtitle1 three">张靓颖</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic2%20(2).jpg">
+                                        <p class="subtitle1">敢爱的冲动 电视剧《浪花一朵朵》片尾曲</p>
+                                        <p class="subtitle1 three">徐云霄</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic2%20(3).jpg">
+                                        <p class="subtitle1">给一个焦虑症的朋友 官方版</p>
+                                        <p class="subtitle1 three">理想后花园</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic2%20(4).jpg">
+                                        <p class="subtitle1">吃土 电影《破局》片尾曲</p>
+                                        <p class="subtitle1 three">汪苏泷</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic2%20(5).jpg">
+                                        <p class="subtitle1">问情 官方版</p>
+                                        <p class="subtitle1 three">袁娅维</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic2%20(6).jpg">
+                                        <p class="subtitle1">流浪途中爱上你 电影《泡芙小姐》推广曲</p>
+                                        <p class="subtitle1 three">叶蓓 & 许巍</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic2%20(7).jpg">
+                                        <p class="subtitle1">泡泡糖 Bubble Gum 中文版</p>
+                                        <p class="subtitle1 three">陈骁</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic2%20(8).jpg">
+                                        <p class="subtitle1">Rollin 官方版</p>
+                                        <p class="subtitle1 three">CORE ONE</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(5).jpg">
+                                        <p class="subtitle1">Holiday Night Teaser Clip #YOONA</p>
+                                        <p class="subtitle1 three">少女时代 & 允儿(少女时代)</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(6).jpg">
+                                        <p class="subtitle1">LOVE WHISPER Teaser</p>
+                                        <p class="subtitle1 three">GFriend回归新曲预告公开</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(7).jpg">
+                                        <p class="subtitle1">Marmalade 试听版</p>
+                                        <p class="subtitle1 three">Macklemore & Ryan Lewis & Lil Yachty</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(8).jpg">
+                                        <p class="subtitle1">我害怕 电视剧《我们的少年时代》插曲</p>
+                                        <p class="subtitle1 three">薛之谦</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab_show" style="left: 0">
+                        <div id="show_pic">
+                            <ul>
+                                <li id="first">
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(1).jpg">
+                                        <p class="subtitle1">Boys</p>
+                                        <p class="subtitle1 three">Charli XCX</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(2).jpg">
+                                        <p class="subtitle1">CALLING YOU Smile ver.</p>
+                                        <p class="subtitle1 three">Highlight</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(3).jpg">
+                                        <p class="subtitle1">Talking To Myself</p>
+                                        <p class="subtitle1 three">Linkin Park</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(4).jpg">
+                                        <p class="subtitle1">BLAST!</p>
+                                        <p class="subtitle1 three">ももいろクローバーZ</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(5).jpg">
+                                        <p class="subtitle1">Holiday Night Teaser Clip #YOONA</p>
+                                        <p class="subtitle1 three">少女时代 & 允儿(少女时代)</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(6).jpg">
+                                        <p class="subtitle1">LOVE WHISPER Teaser</p>
+                                        <p class="subtitle1 three">GFriend回归新曲预告公开</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(7).jpg">
+                                        <p class="subtitle1">Marmalade 试听版</p>
+                                        <p class="subtitle1 three">Macklemore & Ryan Lewis & Lil Yachty</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(8).jpg">
+                                        <p class="subtitle1">我害怕 电视剧《我们的少年时代》插曲</p>
+                                        <p class="subtitle1 three">薛之谦</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab_show" style="left: 0">
+                        <div id="show_pic">
+                            <ul>
+                                <li id="first">
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(1).jpg">
+                                        <p class="subtitle1">Boys</p>
+                                        <p class="subtitle1 three">Charli XCX</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(2).jpg">
+                                        <p class="subtitle1">CALLING YOU Smile ver.</p>
+                                        <p class="subtitle1 three">Highlight</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(3).jpg">
+                                        <p class="subtitle1">Talking To Myself</p>
+                                        <p class="subtitle1 three">Linkin Park</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(4).jpg">
+                                        <p class="subtitle1">BLAST!</p>
+                                        <p class="subtitle1 three">ももいろクローバーZ</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(5).jpg">
+                                        <p class="subtitle1">Holiday Night Teaser Clip #YOONA</p>
+                                        <p class="subtitle1 three">少女时代 & 允儿(少女时代)</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(6).jpg">
+                                        <p class="subtitle1">LOVE WHISPER Teaser</p>
+                                        <p class="subtitle1 three">GFriend回归新曲预告公开</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(7).jpg">
+                                        <p class="subtitle1">Marmalade 试听版</p>
+                                        <p class="subtitle1 three">Macklemore & Ryan Lewis & Lil Yachty</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(8).jpg">
+                                        <p class="subtitle1">我害怕 电视剧《我们的少年时代》插曲</p>
+                                        <p class="subtitle1 three">薛之谦</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab_show" style="left: 0">
+                        <div id="show_pic">
+                            <ul>
+                                <li id="first">
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(1).jpg">
+                                        <p class="subtitle1">Boys</p>
+                                        <p class="subtitle1 three">Charli XCX</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(2).jpg">
+                                        <p class="subtitle1">CALLING YOU Smile ver.</p>
+                                        <p class="subtitle1 three">Highlight</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(3).jpg">
+                                        <p class="subtitle1">Talking To Myself</p>
+                                        <p class="subtitle1 three">Linkin Park</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(4).jpg">
+                                        <p class="subtitle1">BLAST!</p>
+                                        <p class="subtitle1 three">ももいろクローバーZ</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(5).jpg">
+                                        <p class="subtitle1">Holiday Night Teaser Clip #YOONA</p>
+                                        <p class="subtitle1 three">少女时代 & 允儿(少女时代)</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(6).jpg">
+                                        <p class="subtitle1">LOVE WHISPER Teaser</p>
+                                        <p class="subtitle1 three">GFriend回归新曲预告公开</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(7).jpg">
+                                        <p class="subtitle1">Marmalade 试听版</p>
+                                        <p class="subtitle1 three">Macklemore & Ryan Lewis & Lil Yachty</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(8).jpg">
+                                        <p class="subtitle1">我害怕 电视剧《我们的少年时代》插曲</p>
+                                        <p class="subtitle1 three">薛之谦</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab_show" style="left: 0">
+                        <div id="show_pic">
+                            <ul>
+                                <li id="first">
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(1).jpg">
+                                        <p class="subtitle1">Boys</p>
+                                        <p class="subtitle1 three">Charli XCX</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(2).jpg">
+                                        <p class="subtitle1">CALLING YOU Smile ver.</p>
+                                        <p class="subtitle1 three">Highlight</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(3).jpg">
+                                        <p class="subtitle1">Talking To Myself</p>
+                                        <p class="subtitle1 three">Linkin Park</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(4).jpg">
+                                        <p class="subtitle1">BLAST!</p>
+                                        <p class="subtitle1 three">ももいろクローバーZ</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(5).jpg">
+                                        <p class="subtitle1">Holiday Night Teaser Clip #YOONA</p>
+                                        <p class="subtitle1 three">少女时代 & 允儿(少女时代)</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(6).jpg">
+                                        <p class="subtitle1">LOVE WHISPER Teaser</p>
+                                        <p class="subtitle1 three">GFriend回归新曲预告公开</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(7).jpg">
+                                        <p class="subtitle1">Marmalade 试听版</p>
+                                        <p class="subtitle1 three">Macklemore & Ryan Lewis & Lil Yachty</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab1/pic1%20(8).jpg">
+                                        <p class="subtitle1">我害怕 电视剧《我们的少年时代》插曲</p>
+                                        <p class="subtitle1 three">薛之谦</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="tab2">
+            <div class="inner_box fun">
+                <div class="title">
+                    <h3>娱乐</h3>
+                    <ul id="tab">
+                        <li class="current_tab" id="first_tab"><a href="javascript:void(0)">全部</a></li>
+                        <li><a href="javascript:void(0)">现场</a></li>
+                        <li><a href="javascript:void(0)">影视</a></li>
+                    </ul>
+                </div>
+                <div class="line"></div>
+                <a href="javascript:void(0);" id="prev" class="lf_arrow"></a>
+                <a href="javascript:void(0);" id="next" class="lf_arrow"></a>
+                <div id="tab_box">
+                    <div class="tab_show first_tab_show" style="left: 0">
+                        <div class="rollbox">
+                            <div class="list">
+                                <div class="sub">
+                                    <img src="img/tab2/pic1%20(1).gif" width="470px" height="300px">
+                                    <p class="subtitle">少女时代强势回归~</p>
+                                    <p class="subtitle second">All Night&Holiday - M!Countdown现场版 17/08/10</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="show_pic">
+                            <ul>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(2).jpg">
+                                        <p class="subtitle1">少时兴致爆发的KTV现场！</p>
+                                        <p class="subtitle1 three">跟着小姐姐们嗨起来！</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(3).jpg">
+                                        <p class="subtitle1">外网翻唱女歌手TOP10</p>
+                                        <p class="subtitle1 three">这些翻唱太好听！</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(4).jpg">
+                                        <p class="subtitle1">WANNA·ONE演绎《太阳的后</p>
+                                        <p class="subtitle1">裔》经典桥段！艺能感十足~</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(5).jpg">
+                                        <p class="subtitle1">Super Hebe!田馥甄高音全记录</p>
+                                        <p class="subtitle1 three">这个小姐姐被我承包啦！</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(6).jpg">
+                                        <p class="subtitle1">15分钟讲述前田敦子与AKB48成</p>
+                                        <p class="subtitle1">长的辛酸与快乐</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(7).jpg">
+                                        <p class="subtitle1">粉妈P!nk音乐历程回顾(2000 - </p>
+                                        <p class="subtitle1">2017)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(8).jpg">
+                                        <p class="subtitle1">《星际特工》蕾哈娜一分钟劲爆</p>
+                                        <p class="subtitle1">片段全新曝光 五分钟十次变装上演极致制服诱惑</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(9).jpg">
+                                        <p class="subtitle1">少时回归主打曲《Holiday》直拍！</p>
+                                        <p class="subtitle1 three">心空预警！来自小姐姐的美颜暴击~</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab_show">
+                        <div class="rollbox">
+                            <div class="list">
+                                <div class="sub">
+                                    <img src="img/tab2/pic2%20(1).jpg" width="470px" height="300px">
+                                    <p class="subtitle">Selina和Hebe吵架，问Hebe站哪一边！</p>
+                                    <p class="subtitle second">女生“吵”起来真的好可怕哦哈哈哈哈！</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="show_pic">
+                            <ul>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab2/pic2%20(2).jpg">
+                                        <p class="subtitle1">蜜雪薇琪唱《演员》有点甜！</p>
+                                        <p class="subtitle1 three">和声好听哭！</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(3).jpg">
+                                        <p class="subtitle1">景甜为周杰伦做过疯狂事儿？</p>
+                                        <p class="subtitle1 three">《告白气球》唱的甜哟~</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(4).jpg">
+                                        <p class="subtitle1">赫海排个舞也撒糖哦！</p>
+                                        <p class="subtitle1 three">久违的OPPA OPPA</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(5).jpg">
+                                        <p class="subtitle1">夜华白浅现场帅气尬舞！</p>
+                                        <p class="subtitle1 three">四海八荒来围观！</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(6).jpg">
+                                        <p class="subtitle1">潘玮柏听吴昕唱歌 眼里都是小星星</p>
+                                        <p class="subtitle1 three">昕姐歌喉逆袭啦！</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(7).jpg">
+                                        <p class="subtitle1">小鱼儿哭哭合集！！！</p>
+                                        <p class="subtitle1 three">我鱼哭了但我只想哈哈哈</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(8).jpg">
+                                        <p class="subtitle1">升降台卡壳罗志祥机智应变</p>
+                                        <p class="subtitle1 three">你又搞笑了我的猪~</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab2/pic1%20(9).jpg">
+                                        <p class="subtitle1">看吴京是如何撩到谢楠的~</p>
+                                        <p class="subtitle1 three">当年这个嘉宾有点厉害！</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab_show">内容333333333333</div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="change1">
+            <div class="inner_box1 hotRecommend">
+                <div class="title">
+                    <h3>热播推荐</h3>
+                    <a href="javascript:void(0)" id="change">换一换</a>
+                </div>
+                <div class="line"></div>
+                <div id="change_box">
+                    <div id="show_pic1" style="left:0px;height: 210px">
+                        <ul>
+                            <li id="first">
+                                <div id="show">
+                                    <img src="img/change1/pic1%20(1).jpg">
+                                    <p class="subtitle1">那些惊艳过我们的男生女声们</p>
+                                    <p class="subtitle1 three">这些人到底是男是女?! </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/change1/pic1%20(2).png">
+                                    <p class="subtitle1">迪丽热巴各种类型舞蹈混剪！</p>
+                                    <p class="subtitle1 three">性感美艳or可爱搞怪？</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/change1/pic1%20(3).jpg">
+                                    <p class="subtitle1">Liam Gallagher首次中国巡演北 </p>
+                                    <p class="subtitle1">京演唱会</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/change1/pic1%20(4).jpg">
+                                    <p class="subtitle1">维密天使KK告诉你有关她25岁</p>
+                                    <p class="subtitle1">学到的25件事情!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/change1/pic1%20(5).jpg">
+                                    <p class="subtitle1">甜美公主&时尚精灵</p>
+                                    <p class="subtitle1 three">关晓彤访谈时间到</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/change1/pic2%20(1).jpg">
+                                    <p class="subtitle1">4 Walls & Energetic 混音版</p>
+                                    <p class="subtitle1 three">函数与忘拿碗的碰撞！</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/change1/pic2%20(2).jpg">
+                                    <p class="subtitle1">醋味男神最可爱！</p>
+                                    <p class="subtitle1 three">影视剧中男主吃醋片段</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/change1/pic2%20(3).jpg">
+                                    <p class="subtitle1">史上最快速的舞蹈</p>
+                                    <p class="subtitle1 three">看完不头晕的算你赢！</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/change1/pic2%20(4).jpg">
+                                    <p class="subtitle1">石原里美写真拍摄花絮</p>
+                                    <p class="subtitle1 three">最爱你那一抹烈焰红唇~</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/change1/pic2%20(5).jpg">
+                                    <p class="subtitle1">Code Blue人物模仿</p>
+                                    <p class="subtitle1 three">小哥你简直太6了！</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="tab3">
+            <div class="inner_box spot">
+                <div class="title">
+                    <h3>现场</h3>
+                </div>
+                <div class="line"></div>
+                <a href="javascript:void(0);" id="prev" class="lf_arrow"></a>
+                <a href="javascript:void(0);" id="next" class="lf_arrow"></a>
+                <div id="tab_box">
+                    <div class="tab_show first_tab_show" style="left: 0">
+                        <div class="rollbox">
+                            <div class="list">
+                                <div class="sub">
+                                    <img src="img/tab3/pic1%20(1).gif" width="470" height="300" alt=""/>
+                                    <p class="subtitle">WANNA·ONE《Burn it Up》首舞台！</p>
+                                    <p class="subtitle second">超燃的现场气氛！一起嗨翻全场！</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="show_pic">
+                            <ul>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab3/pic1%20(2).jpg">
+                                        <p class="subtitle1">Energetic - M!Countdown现场</p>
+                                        <p class="subtitle1">版 17/08/10</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab3/pic1%20(3).jpg">
+                                        <p class="subtitle1">All Night&Holiday - </p>
+                                        <p class="subtitle1">M!Countdown现场版 17/08/10</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab3/pic1%20(4).png">
+                                        <p class="subtitle1">KO KO BOP - M!Countdown现场</p>
+                                        <p class="subtitle1">版 17/08/10</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab3/pic1%20(5).png">
+                                        <p class="subtitle1">Love Whisper - M!Countdown</p>
+                                        <p class="subtitle1 three">现场版 17/08/10</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab3/pic1%20(6).jpg">
+                                        <p class="subtitle1">Tomorrow,Today - </p>
+                                        <p class="subtitle1">M!Countdown现场版 17/08/10</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab3/pic1%20(7).jpg">
+                                        <p class="subtitle1">Stay With Me&I Don’t Like Your</p>
+                                        <p class="subtitle1"> Girlfriend - M!Countdown现场版 17/08/10</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab3/pic1%20(8).jpg">
+                                        <p class="subtitle1">ICE CHU  - M!Countdown现场版 </p>
+                                        <p class="subtitle1">17/08/10</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab3/pic1%20(9).jpg">
+                                        <p class="subtitle1">the.the.the - M!Countdown现场</p>
+                                        <p class="subtitle1">版 17/08/10</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="more1">
+            <div class="inner_box1 star">
+                <div class="title">
+                    <h3>主打星:WANNA·ONE</h3>
+                    <a href="http://mpage.yinyuetai.com/?artistId=42890" id="more">查看更多》</a>
+                </div>
+                <div class="line"></div>
+                <div id="change_box">
+                    <div id="show_pic1" style="left:0px;height: 210px">
+                        <ul>
+                            <li id="first">
+                                <div id="show">
+                                    <img src="img/more1/pic3%20(1).jpg">
+                                    <p class="subtitle1">最强阵容《浮夸》合辑,一次听</p>
+                                    <p class="subtitle1">过瘾!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more1/pic3%20(2).gif">
+                                    <p class="subtitle1">顶级IP电影《蜘蛛侠:英雄归</p>
+                                    <p class="subtitle1">来》定档9月8日 史上最高人气蜘蛛侠回归复联打造英雄巨制</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more1/pic3%20(3).jpg">
+                                    <p class="subtitle1">脏辫+补丁衫=顽痞“小河神”? </p>
+                                    <p class="subtitle1 three">李现教你花式“点烟辨魂”!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more1/pic3%20(4).jpg">
+                                    <p class="subtitle1">许魏洲的safe house等你开启</p>
+                                    <p class="subtitle1 three">暗房里有哪些秘密？</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more1/pic3%20(5).jpg">
+                                    <p class="subtitle1">陈学冬机场百米冲刺！竟然是为了...</p>
+                                    <p class="subtitle1 three">这个速度是真的很迫切了</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more1/pic3%20(6).jpg">
+                                    <p class="subtitle1">水果姐2017MTV颁奖礼宣传</p>
+                                    <p class="subtitle1 three">太空风格让人惊喜</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more1/pic3%20(7).jpg">
+                                    <p class="subtitle1">Boys</p>
+                                    <p class="subtitle1 three">Charli XCX</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more1/pic3%20(8).jpg">
+                                    <p class="subtitle1">CALLING YOU Smile ver.</p>
+                                    <p class="subtitle1 three">Highlight</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more1/pic3%20(9).jpg">
+                                    <p class="subtitle1">Talking To Myself</p>
+                                    <p class="subtitle1 three">Linkin Park</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more1/pic3%20(10).jpg">
+                                    <p class="subtitle1">BLAST!</p>
+                                    <p class="subtitle1 three">ももいろクローバーZ</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="tab6">
+            <div class="inner_box music_V">
+                <div class="title">
+                    <h3>音乐V榜</h3>
+                    <div class="titleLink">
+                        <a target="_blank" href="http://so.yinyuetai.com/?keyword=V%E6%A6%9CTOP10">TOP10</a>
+                        <a target="_blank" href="http://so.yinyuetai.com/?keyword=V%E6%A6%9C%E7%9C%8B%E9%9F%B3%E4%B9%90">看音乐</a>
+                        <a target="_blank" href="http://so.yinyuetai.com/?keyword=V%E6%A6%9C%E5%AF%86%E8%B0%88%E5%AE%A4">密谈室</a>
+                        <a target="_blank" href="http://so.yinyuetai.com/?keyword=V%E6%A6%9C%E6%9C%89%E8%AF%9D%E8%AF%B4">有话说</a>
+                        <a target="_blank" href="http://so.yinyuetai.com/?keyword=%E9%9F%B3%E6%82%A6V%E6%A6%9C%E7%89%B9%E5%88%AB%E4%BC%81%E5%88%92">特别企划</a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div id="tab_box">
+                    <div class="tab_show first_tab_show">
+                        <div class="rollbox">
+                            <div class="list">
+                                <div class="sub">
+                                    <img src="img/tab6/pic1%20(1).jpg" width="470" height="300" alt=""/>
+                                    <p class="subtitle">给我钱引领的黑泡style</p>
+                                    <p class="subtitle second">老子吃火锅！你吃火锅底料！对你笑吼吼！因为我有礼貌！</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="show_tv">
+                            <ul>
+                                <li>
+                                    <div class="tv_name">
+                                        <h4>周四节目单</h4>
+                                        <p>THURSDAY</p>
+                                    </div>
+                                    <div class="show current_tv">
+                                        <p class="line"></p>
+                                        <img src="img/tab6/pic1%20(2)1.jpg">
+                                        <p class="subtitle1">2017下半年KPOP回归大混战</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab6/pic1%20(2)2.jpg">
+                                        <p class="subtitle1">夏日女团清凉回归 V榜特别企划EP194</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab6/pic1%20(2)3.jpg">
+                                        <p class="subtitle1">2017夏季日剧档开更啦</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tv_name">
+                                        <h4>周三节目单</h4>
+                                        <p>WEDNESDAY</p>
+                                    </div>
+                                    <div class="show current_tv">
+                                        <p class="line"></p>
+                                        <img src="img/tab6/pic1%20(3)1.jpg">
+                                        <p class="subtitle1">给我钱引领的黑泡style V榜有话说EP13</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab6/pic1%20(3)2.jpg">
+                                        <p class="subtitle1">国产电影保护月下诞生的黑马 V榜有话说EP12</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab6/pic1%20(3)3.jpg">
+                                        <p class="subtitle1">2017上半年男团评价排行榜 V榜有话说 EP11</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tv_name">
+                                        <h4>周二节目单</h4>
+                                        <p>TUESDAY</p>
+                                    </div>
+                                    <div class="show current_tv">
+                                        <p class="line"></p>
+                                        <img src="img/tab6/pic1%20(4)1.jpg">
+                                        <p class="subtitle1">青春就是躁 V榜密谈室EP24 -</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab6/pic1%20(4)2.jpg">
+                                        <p class="subtitle1">唐禹哲的少年时代 V榜密谈室EP23</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab6/pic1%20(4)3.jpg">
+                                        <p class="subtitle1">您的好友社会垂已上线 V榜密谈室EP22</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="tab5">
+            <div class="inner_box self">
+                <div class="title">
+                    <h3>自制节目</h3>
+                    <a href="http://program.yinyuetai.com/" id="more">查看更多》</a>
+                </div>
+                <div class="line"></div>
+                <div id="tab_box">
+                    <div class="tab_show first_tab_show">
+                        <div class="rollbox">
+                            <div class="list">
+                                <div class="sub">
+                                    <img src="img/tab5/pic1%20(1).gif" width="470" height="300" alt=""/>
+                                    <p class="subtitle">NCT 127 魅力攻击!CHERRY BOMB - NCT 127专访</p>
+                                    <p class="subtitle second">通!知！广大市民盆友们请注意，NCT127市长们为大家带来了独家专</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="show_tv">
+                            <ul>
+                                <li>
+                                    <div class="tv_name">
+                                        <h4>三分热娱</h4>
+                                        <p>HOT CUT</p>
+                                    </div>
+                                    <div class="show current_tv">
+                                        <p class="line"></p>
+                                        <img src="img/tab5/pic1%20(2)1.jpg">
+                                        <p class="subtitle1">谭松韵上演精分自爆理想型</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab5/pic1%20(2)2.jpg">
+                                        <p class="subtitle1">当奶爸吴尊遇见球星马布里</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab5/pic1%20(2)3.jpg">
+                                        <p class="subtitle1">张韶涵约吴青峰凌晨三点吃面</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tv_name">
+                                        <h4>神马</h4>
+                                        <p>What</p>
+                                    </div>
+                                    <div class="show current_tv">
+                                        <p class="line"></p>
+                                        <img src="img/tab5/pic1%20(3)1.jpg">
+                                        <p class="subtitle1">许魏洲现场即兴拉丁嗨翻全场</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab5/pic1%20(3)2.jpg">
+                                        <p class="subtitle1">于朦胧轩辕剑化身重现盛世美颜</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab5/pic1%20(3)3.jpg">
+                                        <p class="subtitle1">李治廷在家会全裸</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tv_name">
+                                        <h4>STAR！调查团</h4>
+                                        <p>INVESTIGATION MISSION</p>
+                                    </div>
+                                    <div class="show current_tv">
+                                        <p class="line"></p>
+                                        <img src="img/tab5/pic1%20(4)1.jpg">
+                                        <p class="subtitle1">左立 - 套住青春 what现场版</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab5/pic1%20(4)2.jpg">
+                                        <p class="subtitle1">于湉 - 指纹 what现场版</p>
+                                    </div>
+                                    <div class="show">
+                                        <p class="line"></p>
+                                        <img src="img/tab5/pic1%20(4)3.jpg">
+                                        <p class="subtitle1">李玉玺 - 想 what现场版</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="tab4">
+            <div class="inner_box cooperate">
+                <div class="title">
+                    <h3>官方合作专区</h3>
+                    <ul id="tab">
+                        <li class="current_tab" id="first_tab"><a href="javascript:void(0)">S.M.Entertainment</a></li>
+                    </ul>
+                </div>
+                <div class="line"></div>
+                <a href="javascript:void(0);" id="prev" class="lf_arrow"></a>
+                <a href="javascript:void(0);" id="next" class="lf_arrow"></a>
+                <div id="tab_box">
+                    <div class="tab_show first_tab_show" style="left: 0">
+                        <div class="rollbox">
+                            <div class="list">
+                                <div class="sub">
+                                    <img src="img/tab4/pic1%20(1)%20(1).jpg" width="470" height="300" alt=""/>
+                                    <p class="subtitle">少女时代双主打之《All Night》完整版</p>
+                                    <p class="subtitle second">与少时姐姐一起享受party！</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="show_pic">
+                            <ul>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab4/pic1%20(2)%20(1).jpg">
+                                        <p class="subtitle1">We Young Teaser Clip </p>
+                                        <p class="subtitle1">HAECHAN ver.</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab4/pic1%20(3).jpg">
+                                        <p class="subtitle1">We Young Teaser Clip JISUNG </p>
+                                        <p class="subtitle1">ver.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab4/pic1%20(4)%20(1).jpg">
+                                        <p class="subtitle1">We Young Teaser Clip 钟辰乐</p>
+                                        <p class="subtitle1">ver.</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab4/pic1%20(5)%20(1).jpg">
+                                        <p class="subtitle1">We Young Teaser Clip MARK </p>
+                                        <p class="subtitle1">ver.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab4/pic1%20(6).jpg">
+                                        <p class="subtitle1">All Night Clean Ver.</p>
+                                        <p class="subtitle1">少女时代 & 允儿(少女时代)</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab4/pic1%20(7).png">
+                                        <p class="subtitle1">Cure 完整版</p>
+                                        <p class="subtitle1">GFriend回归新曲预告公开</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="show">
+                                        <img src="img/tab4/pic1%20(8).jpg">
+                                        <p class="subtitle1">All Night 完整版</p>
+                                        <p class="subtitle1">Macklemore & Ryan Lewis & Lil Yachty</p>
+                                    </div>
+                                    <div id="show">
+                                        <img src="img/tab4/pic1%20(9).jpg">
+                                        <p class="subtitle1">Holiday 完整版</p>
+                                        <p class="subtitle1">Holiday</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="more2">
+            <div class="inner_box1 form">
+                <div class="title">
+                    <h3>精品悦单</h3>
+                    <a href="http://mv.yinyuetai.com/pl.html" id="more">查看更多》</a>
+                </div>
+                <div class="line"></div>
+                <div id="change_box">
+                    <div id="show_pic1" style="left:0px">
+                        <ul>
+                            <li id="first">
+                                <div id="show">
+                                    <img src="img/more2%20(1).jpg" width="220px" height="220px">
+                                    <p class="subtitle1">有爱就有希望,天佑川新,愿灾区群众平安!</p>
+                                    <p class="subtitle1 three">我们那么近,伤在你身,也痛在我心,就算这伤痕也许永远无法抹去,不怕、不哭、不孤单 ,等待天晴,只愿我们因此更近,永远站在一起。愿灾区群众安好!</p>
+                                </div>
+                                <div class="hover_box">
+                                    <a href="http://v.yinyuetai.com/playlist/4716984?f=SY-JPYD-list-1" target="_blank">
+                                        <div class="img_hover_box">
+                                            <img class="img_bigger" src="img/more2%20(1).jpg">
+                                            <span class="img_shadow"></span>
+                                        </div>
+                                        <div class="info">
+                                            <div class="info_title">
+                                                <h5 class="info_first">有爱就有希望,天佑川新,愿灾区群众平安!</h5>
+                                                <p class="info_second">我们那么近,伤在你身,也痛在我心,就算这伤痕也许永远无法抹去,不怕、不哭、不孤单 ,等待天晴,只愿我们因此更近,永远站在一起。愿灾区群众安好!</p>
+                                            </div>
+                                            <div class="user">
+                                                <img src="img/user1%20(1).png">
+                                                <span class="username">林二家的三岁娃</span>
+                                            </div>
+                                            <p style="margin-left: 50px;font-size: 12px;margin-bottom: 5px">
+                                                <img src="img/user1%20(2).png" width="13" height="14" style="vertical-align: middle;margin-right: 5px">827
+                                            </p>
+                                            <p style="margin-left: 50px;font-size: 12px;">
+                                                收录MV : 22首
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more2%20(2).jpg" width="220px" height="220px">
+                                    <p class="subtitle1">潘玮柏:杀不死我只会让我变得更坚强</p>
+                                    <p class="subtitle1 three">潘玮柏生日快乐!坚持嘻哈舞曲,重新出发,祝福你加盟华纳后可以更上一层楼!</p>
+                                </div>
+                                <div class="hover_box">
+                                    <a href="http://v.yinyuetai.com/playlist/4711902?f=SY-JPYD-list-2" target="_blank">
+                                        <div class="img_hover_box">
+                                            <img class="img_bigger" src="img/more2%20(2).jpg">
+                                            <span class="img_shadow"></span>
+                                        </div>
+                                        <div class="info">
+                                            <div class="info_title">
+                                                <h5 class="info_first">潘玮柏:杀不死我只会让我变得更坚强</h5>
+                                                <p class="info_second">潘玮柏生日快乐!坚持嘻哈舞曲,重新出发,祝福你加盟华纳后可以更上一层楼!</p>
+                                            </div>
+                                            <div class="user">
+                                                <img src="img/user2%20(1).gif">
+                                                <span class="username">西门町的虾虾</span>
+                                            </div>
+                                            <p style="margin-left: 50px;font-size: 12px;margin-bottom: 5px">
+                                                <img src="img/user1%20(2).png" width="13" height="14" style="vertical-align: middle;margin-right: 5px">2.0万
+                                            </p>
+                                            <p style="margin-left: 50px;font-size: 12px;">
+                                                收录MV : 17首
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more2%20(3).jpg">
+                                    <p class="subtitle1">KARA MV合辑 </p>
+                                    <p class="subtitle1 three">说到#KARA#,大家印象最深刻的应该就是《Mr.》这首歌,“啦啦啦啦啦啦,啦啦啦啦啦啦,啦啦啦啦啦啦”熟悉的旋律搭配独具特色的舞蹈,让人没有办法不喜欢这几个充满活力的女孩子,感谢你们带来那么多精彩的舞台,相信你们能够在各自的领域继续发光发亮~</p>
+                                </div>
+                                <div class="hover_box">
+                                    <a href="http://v.yinyuetai.com/playlist/4712506?f=SY-JPYD-list-3" target="_blank">
+                                        <div class="img_hover_box">
+                                            <img class="img_bigger" src="img/more2%20(3).jpg">
+                                            <span class="img_shadow"></span>
+                                        </div>
+                                        <div class="info">
+                                            <div class="info_title">
+                                                <h5 class="info_first">KARA MV合辑</h5>
+                                                <p class="info_second">说到#KARA#,大家印象最深刻的应该就是《Mr.》这首歌,“啦啦啦啦啦啦,啦啦啦啦啦啦,啦啦啦啦啦啦”熟悉的旋律搭配独具特色的舞蹈,让人没有办法不喜欢这几个充满活力的女孩子,感谢你们带来那么多精彩的舞台,相信你们能够在各自的领域继续发光发亮~</p>
+                                            </div>
+                                            <div class="user">
+                                                <img src="img/user2%20(1).gif">
+                                                <span class="username">我是一粒米</span>
+                                            </div>
+                                            <p style="margin-left: 50px;font-size: 12px;margin-bottom: 5px">
+                                                <img src="img/user1%20(2).png" width="13" height="14" style="vertical-align: middle;margin-right: 5px">2.0万
+                                            </p>
+                                            <p style="margin-left: 50px;font-size: 12px;">
+                                                收录MV : 13首
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more2%20(4).jpg">
+                                    <p class="subtitle1">剧经典!这才是你的暑假</p>
+                                    <p class="subtitle1 three">暑假年年有,年年都很长。除了空调WiFi西瓜,还有那么几部剧,每年都会在暑假同时出现~暑期必看神剧,有他们才不孤单!</p>
+                                </div>
+                                <div class="hover_box">
+                                    <a href="http://v.yinyuetai.com/playlist/4714970?f=SY-JPYD-list-4" target="_blank">
+                                        <div class="img_hover_box">
+                                            <img class="img_bigger" src="img/more2%20(4).jpg">
+                                            <span class="img_shadow"></span>
+                                        </div>
+                                        <div class="info">
+                                            <div class="info_title">
+                                                <h5 class="info_first">剧经典!这才是你的暑假</h5>
+                                                <p class="info_second">暑假年年有,年年都很长。除了空调WiFi西瓜,还有那么几部剧,每年都会在暑假同时出现~暑期必看神剧,有他们才不孤单!</p>
+                                            </div>
+                                            <div class="user">
+                                                <img src="img/user4%20(1).jpg">
+                                                <span class="username">给你举个栗子</span>
+                                            </div>
+                                            <p style="margin-left: 50px;font-size: 12px;margin-bottom: 5px">
+                                                <img src="img/user1%20(2).png" width="13" height="14" style="vertical-align: middle;margin-right: 5px">2.0万
+                                            </p>
+                                            <p style="margin-left: 50px;font-size: 12px;">
+                                                收录MV : 41首
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/more2%20(5).jpg">
+                                    <p class="subtitle1">Wonder Girls 10年MV回顾</p>
+                                    <p class="subtitle1 three">“You know I still love you baby,and it will never change。”感谢你们带给我们那些好听的音乐。解散不是终点,愿你们在未来的路上继续创造着属于自己的奇迹!</p>
+                                </div>
+                                <div class="hover_box" id="left_hover_box">
+                                    <a href="http://v.yinyuetai.com/playlist/4713682?f=SY-JPYD-list-5" target="_blank">
+                                        <div class="img_hover_box">
+                                            <img class="img_bigger" src="img/more2%20(5).jpg">
+                                            <span class="img_shadow"></span>
+                                        </div>
+                                        <div class="info">
+                                            <div class="info_title">
+                                                <h5 class="info_first">Wonder Girls 10年MV回顾</h5>
+                                                <p class="info_second">“You know I still love you baby,and it will never change。”感谢你们带给我们那些好听的音乐。解散不是终点,愿你们在未来的路上继续创造着属于自己的奇迹!</p>
+                                            </div>
+                                            <div class="user">
+                                                <img src="img/user5%20(1).jpg">
+                                                <span class="username">小丸子_</span>
+                                            </div>
+                                            <p style="margin-left: 50px;font-size: 12px;margin-bottom: 5px">
+                                                <img src="img/user1%20(2).png" width="13" height="14" style="vertical-align: middle;margin-right: 5px">5.0万
+                                            </p>
+                                            <p style="margin-left: 50px;font-size: 12px;">
+                                                收录MV : 17首
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" id="change2">
+            <div class="inner_box1 like">
+                <div class="title">
+                    <h3>猜你喜欢</h3>
+                    <h5>（登录后猜的更准哟）</h5>
+                    <a href="javascript:void(0)" id="change">换一换</a>
+                </div>
+                <div class="line"></div>
+                <div id="change_box">
+                    <div id="show_pic1" style="left:0px;height:210px">
+                        <ul>
+                            <li id="first">
+                                <div id="show">
+                                    <img src="img/pic4%20(1).jpg">
+                                    <p class="subtitle1">我的锅 官方版</p>
+                                    <p class="subtitle1 three">战斗少女ATF</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/pic4%20(2).jpg">
+                                    <p class="subtitle1">Generation2</p>
+                                    <p class="subtitle1 three">王嘉尔(GOT7)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/pic4%20(3).jpg">
+                                    <p class="subtitle1">动物世界 官方版 </p>
+                                    <p class="subtitle1 three">薛之谦</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/pic4%20(4).jpg">
+                                    <p class="subtitle1">What’s My Name 完整版</p>
+                                    <p class="subtitle1 three">T-ara</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/pic4%20(5).jpg">
+                                    <p class="subtitle1">Ko Ko Bop 韩文版</p>
+                                    <p class="subtitle1 three">EXO</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/pic4%20(6).jpg">
+                                    <p class="subtitle1">叩叩趴(Ko Ko Bop) 中文版</p>
+                                    <p class="subtitle1 three">EXO</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/pic3%20(7).jpg">
+                                    <p class="subtitle1">Boys</p>
+                                    <p class="subtitle1 three">Charli XCX</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/pic3%20(8).jpg">
+                                    <p class="subtitle1">CALLING YOU Smile ver.</p>
+                                    <p class="subtitle1 three">Highlight</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/pic3%20(9).jpg">
+                                    <p class="subtitle1">Talking To Myself</p>
+                                    <p class="subtitle1 three">Linkin Park</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="show">
+                                    <img src="img/pic3%20(10).jpg">
+                                    <p class="subtitle1">BLAST!</p>
+                                    <p class="subtitle1 three">ももいろクローバーZ</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="back_to_top" style="display: none">
+            <a title="返回顶部" class="returnTop"></a>
+        </div>
+        <div id="listen">
+            <a title="音乐" class="listenmusic"></a>
+        </div>
+        <div id="music" style="display: none">
+            <div id="music_title">
+                <p>推荐歌曲<span>查看全部歌曲</span><span id="music_exit">X</span></p>
+            </div>
+            <div class="m1">
+                <div class="music_message">
+                    <img class="music_img" src="img/折子戏.jpg" width="90px" height="90px">
+                    <div class="music_info">
+                        <p class="music_name">
+                            折子戏
+                        </p>
+                        <p class="music_singer">
+                            演唱者：黄阅
+                        </p>
+                        <p class="music_author">
+                            作曲：毛慧
+                        </p>
+                        <p class="music_composer">
+                            作词：毛慧
+                        </p>
+                    </div>
+                </div>
+                <div id="wrapper">
+                    <audio src="折子戏.mp3" preload="auto" controls></audio>
+                    <script>
+                        $( function() {
+                            $( 'audio' ).audioPlayer(); }
+                        );
+                    </script>
+                </div>
+            </div>
+            <div class="music_list">
+                <p>专辑列表</p>
+                <ul>
+                    <li id="m1">
+                        <img src="img/折子戏.jpg">
+                        <br>
+                        <a class="tol">古风歌曲</a>
+                    </li>
+                    <li id="m2">
+                        <img src="img/烟花易冷.jpg">
+                        <br>
+                        <a class="tol">流行音乐</a>
+                    </li>
+                    <li id="m3">
+                        <img src="img/摇滚.jpg">
+                        <br>
+                        <a class="tol">摇滚音乐</a>
+                    </li>
+                    <li id="m4">
+                        <img src="img/倾尽天下.jpg">
+                        <br>
+                        <a class="tol">抒情音乐</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--取自音悦台的footer-->
+        <div class="footer">
+            <p class="footer_link">
+                <a href="http://www.yinyuetai.com/article/3" target="_blank" title="关于我们">关于我们</a>
+                <span class="ico_line"></span>
+                <a href="http://www.yinyuetai.com/joinus" target="_blank" title="人才招聘">人才招聘</a>
+                <span class="ico_line"></span>
+                <a href="http://www.yinyuetai.com/article/1" target="_blank" title="联系我们">联系我们</a>
+                <span class="ico_line"></span>
+                <a href="http://www.yinyuetai.com/links" target="_blank" title="友情链接">友情链接</a>
+                <span class="ico_line"></span>
+                <a href="http://www.yinyuetai.com/article/4" target="_blank" title="版权声明">版权声明</a>
+                <span class="ico_line"></span>
+                <a href="http://www.yinyuetai.com/service/problem" target="_blank" title="客服中心">客服中心</a>
+            </p>
+            <p class="footer_copy">
+                <a href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/4028c08b5414482e015417e9da8803e3" target="_blank">
+                    <img src="img/culture.png" style="vertical-align: top;width:25px;height:25px;margin-right:3px;">
+                </a>
+                Copyright © 2009 - 2017 yinyuetai.com 广播电视节目制作经营 许可证编号(京)字第1891号 |
+                <a href="http://www.yinyuetai.com/cert" target="_blank">京网文[2014]2037-287号</a>
+                |
+                <a href="http://www.yinyuetai.com/permit" title="网络视听许可证0110413号" target="_blank">网络视听许可证0110413号</a>
+                <br>
+                <a class="police-store" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502014900" target="_blank">
+                    <img src="img/ghs.png" style="vertical-align: top;">
+                    京公网安备11010502014900号</a>| 京ICP备11024134号-1 | 京ICP证060716号 | 出版物经营许可证
+                <a href="http://www.yinyuetai.com/newcert" target="_blank">新出发京批字第直160022号</a>
+                | 增值电信业务经营许可证B2-20140501
+                <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202013092900002" target="_blank" class="positionImg">
+                    <img src="img/biaoshi.gif" style="vertical-align: top; margin-top: -25px;">
+                </a>
+            </p>
+        </div>
+        <!--登录注册框-->
+        <div class="login_regis">
+            <div class="login_head">
+                <a title="关闭" href="javascript:void(0);" class="login_close">x</a>
+            </div>
+            <div class="inside_right">
+                <ul>
+                    <li class="cur"><a>登录</a></li>
+                    <li><a>注册</a></li>
+                </ul>
+                <div class="log_line"></div>
+                <div class="two_tab">
+                    <div class="login">
+                        <form name="log" method="post" action="index.html">
+                            <p class="form_tip"></p>
+                            <!--只能输入数字、英文、@符号和.符号-->
+                            <input type="text" placeholder="请输入手机号码或邮箱" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9\@\.]/g,'')" size="20" style="width: 276px;height: 35px;border: solid 1px gainsboro;border-radius: 2px; text-indent: 1em;">
+                            <!--只能输入数字和英文字母-->
+                            <input type="password" placeholder="请输入密码" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" size="20" style="width: 276px;height: 35px;border: solid 1px gainsboro;border-radius: 2px; text-indent: 1em;">
+                            <br>
+                            <input type="checkbox" checked="checked">
+                            <label>自动登录</label>
+                            <label class="right">忘记密码</label>
+                            <input class="btn_exm" type="submit" value="登录">
+                        </form>
+                        <div class="login_third_wrap">
+                            <span class="third_text">第三方登录:</span>
+                            <span>
+                        <a href="http://login.yinyuetai.com/api/login/sina-auth" target="_blank" class="sina" title="新浪登录"></a>
+                    </span>
+                            <span>
+                        <a href="http://login.yinyuetai.com/api/login/wechat-auth" target="_blank" class="wechat" title="微信登录"></a>
+                    </span>
+                            <span>
+                        <a href="http://login.yinyuetai.com/api/login/qq-auth" target="_blank" class="qq" title="QQ登录"></a>
+                    </span>
+                        </div>
+                    </div>
+                    <div class="regis no">
+                        <form name="reg" method="post" action="index.html">
+                            <p class="form_tip" id="form_tip"></p>
+                            <input id="phone" type="text" placeholder="请输入手机号码" onblur="checkphone()" size="20" style="width: 276px;height: 35px;border: solid 1px gainsboro;border-radius: 2px; text-indent: 1em;">
+                            <input id="password" type="password" placeholder="密码为6-20位字符，支持大小写" onblur="checkpas()" size="20" style="width: 276px;height: 35px;border: solid 1px gainsboro;border-radius: 2px; text-indent: 1em;">
+                            <input type="text" placeholder="请输入验证符" size="20" style="width: 150px;height: 35px;border: solid 1px gainsboro;border-radius: 2px; text-indent: 1em;">
+                            <input class="btn_exm2" type="button" value="获取验证码" onclick="time(this)" style="border: solid 1px gainsboro;border-radius: 2px;"></input>
+                            <input class="btn_exm" type="button" onclick="return mySubmit();" value="立即注册"></button>
+                            <br>
+                            <input type="checkbox" id="checked2" checked="checked"><label>我已经阅读并同意<a>《音悦Tai服务条款》</a></label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_mask"></div>
+    </div>
+    <script src="js/audioplayer.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/login_regis.js"></script>
+    <script src="js/check_login_regis.js"></script>
+</body>
+</html>
